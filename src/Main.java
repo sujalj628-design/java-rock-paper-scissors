@@ -21,6 +21,15 @@ void main() {
         if (USERINPUT.equalsIgnoreCase("quit")){
             System.out.println("=====THANK YOU FOR PLAYING=====");
             System.out.println("NUMBER OF ROUND= "+ROUND+ " \nTOTAL WIN= "+YOUWIN + " \nLOSE= "+COMPWIN);
+            if (YOUWIN > COMPWIN) {
+                System.out.println("YOU ARE THE CHAMPION!");
+            }
+            else if (COMPWIN > YOUWIN) {
+                System.out.println("COMPUTER WINS THE GAME!");
+            }
+            else {
+                System.out.println("THE GAME IS A DRAW!");
+            }
             break;
         }
 
